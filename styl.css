@@ -1,0 +1,192 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(28, 28, 28);
+}
+header {
+    color: azure;
+    background-color: rgb(0, 0, 0);
+    border-radius: 25px;
+    position: fixed;
+    z-index: 1000;
+    width: 99%;
+    box-shadow: 0px 4px 90px rgba(47, 47, 47, 0.487);
+}
+.mobile-menu {
+    display: none;
+    color: white;
+}
+#Menu {
+    box-shadow: 0px 4px 30px rgb(83, 82, 82);
+    border: none;
+    border-radius: 15px;
+}
+#Menu button {
+    background-color: rgb(29, 29, 29);
+    border: none;
+    color: white;
+    font-weight: 600;
+    padding: 5px;
+    border-radius: 5px;
+}
+#Menu ul{
+    padding: 25px;
+    list-style-type: none;
+}
+#Menu ul li a {
+    color: rgb(38, 38, 39);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+header nav ul {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    list-style-type: none;
+    font-weight: 700;
+}
+header nav ul a {
+    color: azure;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+header nav ul a:hover {
+    color: rgb(151, 151, 151);
+}
+#Main {
+    margin-top: 120px;
+    justify-content: center;
+    align-items: center;
+    color: azure;
+}
+#Main h1 strong {
+    color: rgb(194, 234, 255);
+    transition: 0.5s ease;
+}
+#Main img {
+    display: block;
+    border-radius: 20px;
+    width: 150px;
+}
+#Main h1 strong:hover {
+    color: rgb(81, 188, 246);
+}
+#download-btn {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: rgb(30, 110, 249);
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 700;
+    transition: 0.5s ease;
+}
+#download-btn:hover {
+    background-color: rgb(5, 83, 251);
+    transform: rotate(3deg) scale(1.06);
+    padding: 13px;
+}
+#download2-btn {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: rgba(70, 70, 70, 0.549);
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 700;
+    transition: 0.5s ease;
+}
+#download2-btn:hover {
+    background-color: rgba(43, 43, 43, 0.727);
+    transform: rotate(-3deg) scale(1.06);
+    padding: 13px;
+}
+#About {
+    background-color: azure;
+    padding: 25px;
+}
+#About h1, #About p {
+    color: rgb(0, 0, 90);
+}
+#About p {
+    font-weight: 600;
+}
+#trending {
+    padding: 25px;
+}
+#trending h1 {
+    color: white;
+}
+#trending .cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+#trending .card {
+    width: 200px;
+    height: 190px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px 40px 10px 40px;
+    transition: 0.7s ease;
+    margin-top: 15px;
+}
+#trending .card:hover {
+    transform: translateY(-13px) scale(1.01);
+    opacity: 89%;
+}
+#trending .card img {
+    width: 80px;
+    border-radius: 15px;
+}
+#contact {
+    background-color: white;
+    padding: 15px;
+}
+#contact h1 {
+    color: rgb(0, 0, 90);
+}
+#contact a img {
+    width: 50px;
+    transition: 0.5s ease;
+}
+#contact a img:hover {
+    transform: rotate(15deg) scale(1.2);
+    opacity: 88%;
+}
+@media (max-width: 1020px) {
+    #trending .card {
+        display: inline-block;
+        background-color: azure;
+        padding: 10px;
+        width: 100px;
+        border-radius: 15px;
+        transition: 0.5s ease;
+    }
+    #trending .card img {
+        width: 70px;
+        border-radius: 15px;
+    }
+    header {
+        display: none;
+    }
+    #trending .cards {
+        display: flex;
+        margin-right: 5px;
+    }
+    #trending .card:hover {
+        transform: translateY(-9px) scale(1.01);
+        opacity: 89%;
+    }
+    .mobile-menu {
+        display: inline-block;
+        font-size: 50px;
+    }
+}
